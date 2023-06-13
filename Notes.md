@@ -6,8 +6,7 @@
 
 3. If the token is missing in the request then a 403 (missing jwt) message to the client
 
-4. If a jwt token exists, the filter using the UserDetailsService will try to fetch user details from the database,
-this is done with the user subject (primary credential) extracted from the claim (payload) of the jwt token
+4. If a jwt token exists, the filter using the UserDetailsService will try to fetch user details from the database, this is done with the user subject (primary credential) extracted from the claim (payload) of the jwt token
 
 5. The database then sends the user details if it exists and if it does not exist a 403 (user does not exist) message is sent to the client
 
